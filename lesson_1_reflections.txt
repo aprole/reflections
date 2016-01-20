@@ -1,0 +1,9 @@
+notes from Git course from udacity.com.
+
+git commands learned:
+	git clone: clones a given repository to the current directory
+	git checkout <commit ID>: checks out a commit id
+	git log: shows a list of commits from most recent to oldest
+	git diff <commit ID1> <commit ID2>: shows a diff of two commits
+	git status: shows the status of a git repository
+	git init: creates a repository
