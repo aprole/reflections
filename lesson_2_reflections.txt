@@ -1,0 +1,4 @@
+What happens when you initialize a repository? Why do you need to do it?
+	When you run git init, git creates a repository in the working directory by generating the metadata files, which will allow it to keep trake of the repository state and identify the folder as a container for the repository.
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+	The staging area is an intermediate state between the state of the working directory and the commit. It allows you to bundle several add actions into a single commit, and also to review them before committing the changes into a commit.
