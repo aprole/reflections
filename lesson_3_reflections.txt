@@ -12,3 +12,10 @@ Describe the differences between forks, clones, and branches. When would you use
 
 What is the benefit of having a copy of the last known state of the remote stored locally?
 	It will allow you to know if your local repo is behind, ahead, or out of sync with the remote. The git status and git log commands operate on the information in the local repository.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+	collaborating without Git/GitHub:
+	-I would probably communicate any change requests to documents via email, and wait for others approval. I would make an effort to establish some
+	rules about maintaining a central repository of documents which everyone agrees on.
+	-Easier: none of the collaborators would need to know how to use Git or GitHub.
+	-Harder: It would require more work and emails to get everyone on the same page and avoid confusion. 
