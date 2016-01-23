@@ -2,10 +2,35 @@ What happens when you initialize a repository? Why do you need to do it?
 	When you run git init, git creates a repository in the working directory by generating the metadata files, which will allow it to keep trake of the repository state and identify the folder as a container for the repository.
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
-	The staging area is an intermediate state between the state of the working directory and the commit. It allows you to bundle several add actions into a single commit, and also to review them before committing the changes into a commit.
+	The staging area is an intermediate state between the state of the working directory and the commit. It allows you to bundle several add actions into a single commit, and also to review them before committing the changes into a commit to make sure that they constitute a single logical change.
 
 How can you use the staging area to make sure you have one commit per logical change?
-	You can diff the staging area with the most recent commit in the repo by using git diff --staged to see the changes between the staging area and the repo. then you can add/remove files to the staging area until the staging area contains a single logical change.
+	You can diff the staging area with the most recent commit in the repo by using git diff --staged to see the changes between the staging area and the repo. Then you can add/remove files to the staging area until the staging area contains a single logical change.
 
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 	If you are trying to make an experimental version of your project and do not want to affect the main build. Or if you're trying to make the application in another language.	
+
+How do the diagrams help you visualize the branch structure?
+	They allow you to map all of the commits that are related to a certain branch, and where the two branches diverge and converge. 
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	The result is one branch. It will then contain the commits from both branches. We represent it this way to visually discern the set of commits on each branch from the time the branches diverged to the time they converged.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+	manual merge:
+	pros: 
+		-you will know exactly which changes are being made.
+
+	cons:
+		-the process is susceptible to human error.
+		-it could be tedious and time consuming depending on how many changes there are.
+		-you'll have to understand what the code does when deciding which changes to carry over
+		-the manual merge won't be saved as a commit. How would you even merge the branches without using an automatic merge?
+
+	automatic merge:
+	pros:
+		-it occurs instantaneously, saving time and effort which could be spent doing other things, like watching something on netflix
+		-it may even work better than manual merging
+	cons:
+		-an automatic merge may potentially introduce a bug that may go unnoticed
+		-you won't know exactly what happened to the code unless you review the commit changes.
