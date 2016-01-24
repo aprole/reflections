@@ -19,3 +19,10 @@ How would you collaborate without using Git or GitHub? What would be easier, and
 	rules about maintaining a central repository of documents which everyone agrees on.
 	-Easier: none of the collaborators would need to know how to use Git or GitHub.
 	-Harder: It would require more work and emails to get everyone on the same page and avoid confusion. 
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+	-If you are collaborating with others and want to create a pull request to have the changes approved before merging them into master.
+	-If you're working on a large feature and don't want to affect the main branch during the development of that feature
+	benefits of working in a separate branch: 
+		-will not break the build
+		-commits that are related to the feature that is being implemented in the separate branch will be compartmentalized into that branch
